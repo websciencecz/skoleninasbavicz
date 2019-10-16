@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  web:
+    image: php:7.3-apache
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - 80
+    environment:
+      VIRTUAL_HOST: skoleninasbavi.cz.test
+
+  composer:
+    image: composer:latest
+    volumes:
+      - ./:/app
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
+
