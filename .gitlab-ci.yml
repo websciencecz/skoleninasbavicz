@@ -22,8 +22,9 @@ generate:
         - vendor/bin/statie generate source
         
 deploy:
-  image: python:latest
-  script:
-  - pip install awscli
-  - aws s3 cp ./output/ s3://skoleninasbavi-cz-beta/ --recursive --exclude "*" --include "*.html"
+    stage: deploy
+    image: python:latest
+    script:
+        - pip install awscli
+        - aws s3 cp ./output/ s3://skoleninasbavi-cz-beta/ --recursive --exclude "*" --include "*.html"
    
