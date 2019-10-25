@@ -1,0 +1,9 @@
+stages:
+    - build
+
+composer:
+    stage: build
+    image: composer:latest
+    script:
+        - composer install
+   
