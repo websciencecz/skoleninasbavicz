@@ -9,7 +9,9 @@ composer:
         
 generate:
     stage: build
-    image: php7.1-cli
+    image: php:7.1-cli
+    dependencies:
+        - build:composer
     script:
         - vendor/bin/statie generate source
    
