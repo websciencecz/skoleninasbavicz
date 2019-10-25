@@ -6,4 +6,10 @@ composer:
     image: composer:latest
     script:
         - composer install
+        
+generate:
+    stage: build
+    image: php7.1-cli
+    script:
+        - vendor/bin/statie generate source
    
