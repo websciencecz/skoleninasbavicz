@@ -11,7 +11,7 @@ generate:
     stage: build
     image: php:7.1-cli
     dependencies:
-        - build:composer
+        - composer
     script:
         - vendor/bin/statie generate source
    
