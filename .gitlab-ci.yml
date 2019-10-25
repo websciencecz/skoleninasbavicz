@@ -22,8 +22,8 @@ generate:
         - vendor/bin/statie generate source
         
 deploy:
-    stage: deploy
-    image: debian
-    script:
-        - ls
+  image: python:latest
+  script:
+  - pip install awscli
+  - aws s3 cp ./output/ s3://skoleninasbavi-cz-beta/ --recursive --exclude "*" --include "*.html"
    
