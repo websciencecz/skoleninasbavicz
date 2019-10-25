@@ -1,8 +1,9 @@
 stages:
+    - prepare
     - build
 
 composer:
-    stage: build
+    stage: prepare
     image: composer:latest
     script:
         - composer install
@@ -11,7 +12,7 @@ generate:
     stage: build
     image: php:7.1-cli
     dependencies:
-        - composer
+        - prepare
     script:
         - vendor/bin/statie generate source
    
