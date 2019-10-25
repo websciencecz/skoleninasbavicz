@@ -2,6 +2,11 @@ stages:
     - prepare
     - build
 
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+  - vendor/
+  
 composer:
     stage: prepare
     image: composer:latest
