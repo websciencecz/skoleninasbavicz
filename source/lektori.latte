@@ -3,5 +3,9 @@ layout: "_layouts/default.twig"
 ---
 
 {block content}
-	Lektor
+	{foreach $lectures as $lecture}
+		<a href="{$lecture.relativeUrl}/">
+			<h3>{$lecture.title}</h3>
+		</a>
+	{/foreach}
 {/block}

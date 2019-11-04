@@ -1,0 +1,177 @@
+.bold {
+    font-weight: bold;
+}
+
+.content-box {
+    background-color: #FBFDFF;
+    min-height: 995px;
+}
+
+hr {
+    background-color: silver;
+}
+
+.copyright {
+    color: silver;
+}
+
+.claim-box {
+    background: url("../img/test_hp.png");
+    margin-top: 15px;
+    min-height: 550px;
+    text-align: center;
+}
+
+.footer-box {
+    background-color: rgb(50,50,50);
+    min-height: 250px;
+    padding-top: 30px;
+}
+
+.footer-contact-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-contact table{
+    color: white;
+    margin-top: 15px;
+    min-height: 100px;
+}
+
+.social-icons {
+    color: white;
+    font-size: 32px;
+}
+
+.menu {
+    margin-top: 15px;
+}
+
+.menu li {
+    padding-right: 25px;
+}
+
+.menu li a {
+    color: silver;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    color: grey;
+}
+
+.web-title {
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: mediumseagreen;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.training-box {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 5px 10px 18px silver;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+.training-box-date {
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 40px;
+    border-right:1px solid grey;
+}
+
+.training-box-text {
+    font-size: 18px;
+    margin-top: 13px;
+}
+
+.training-box-text-skill {
+    color: grey;
+    font-size: 14px;
+}
+
+.training-box-arrow {
+    font-size: 40px;
+    margin-top: 20px;
+    padding-right: 50px;
+    text-align: right;
+}
+
+.header {
+    padding-bottom: 15px;
+    border-bottom: 1px solid silver;
+}
+
+.lector-box {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 5px 10px 18px silver;
+    min-height: 430px;
+}
+
+.lector-name {
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    font-size: 12px;
+    border: 1px solid dodgerblue;
+    background-color: dodgerblue;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.link {
+    color: dodgerblue;
+}
+
+.p-title {
+    padding-top: 30px;
+    width: 400px;
+}
+
+.paragraph {
+    text-align: justify;
+    width: 700px;
+}
+
+.info {
+    margin-top: 30px;
+}
+
+.info-key {
+    color: silver;
+    font-size: 21px;
+}
+
+.info-value {
+    font-size: 24px;
+}
+
+.info-row {
+    padding: 10px;
+}
+
+.buy-link {
+    text-decoration: none;
+    cursor: none;
+}
