@@ -24,7 +24,7 @@ hr {
 
 .footer-box {
     background-color: rgb(50,50,50);
-    min-height: 250px;
+    min-height: 280px;
     padding-top: 30px;
 }
 
@@ -37,7 +37,7 @@ hr {
 .footer-contact table{
     color: white;
     margin-top: 15px;
-    min-height: 100px;
+    min-height: 120px;
 }
 
 .social-icons {
@@ -127,6 +127,9 @@ hr {
     margin-top: 15px;
 }
 
+.lector-image {
+    max-width: 325px;
+}
 .tags {
     margin-top: 10px;
 }
@@ -174,4 +177,12 @@ hr {
 .buy-link {
     text-decoration: none;
     cursor: none;
+}
+
+.white-link {
+    color: white;
+}
+
+.white-link:hover {
+    color: white;
 }
