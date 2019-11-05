@@ -69,6 +69,11 @@ hr {
     color: mediumseagreen;
 }
 
+.web-title a, a:hover {
+    color: mediumseagreen;
+    text-decoration: none;
+}
+
 .right {
     text-align: right;
 }
@@ -110,6 +115,14 @@ hr {
     text-align: right;
 }
 
+.training-box-arrow i {
+    color: black;
+}
+
+.training-box-arrow i:hover {
+    color: mediumseagreen;
+}
+
 .header {
     padding-bottom: 15px;
     border-bottom: 1px solid silver;
@@ -122,9 +135,13 @@ hr {
     min-height: 430px;
 }
 
+.lector-box img {
+    min-height: 325px;
+}
+
 .lector-name {
     font-size: 21px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .lector-image {
@@ -185,4 +202,9 @@ hr {
 
 .white-link:hover {
     color: white;
+}
+
+.next-text {
+    font-size: 21px;
+    text-align: center;
 }
