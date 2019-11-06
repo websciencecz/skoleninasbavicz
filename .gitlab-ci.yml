@@ -21,8 +21,8 @@ generate:
     script:
         - vendor/bin/statie generate source
         
-deploy:
-    stage: build-docker
+prepare-docker:
+    stage: deploy
     script:
         - docker login registry.gitlab.com
         - docker build -t registry.gitlab.com/jakubenglicky/skoleninasbavi-cz .
