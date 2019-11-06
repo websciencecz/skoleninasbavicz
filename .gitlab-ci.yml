@@ -3,8 +3,6 @@ stages:
 
 prepare-docker:
     stage: deploy
-    image: docker:stable
-    before_script:
-        - docker login -u gitlab-ci-token -p $TOKEN registry.gitlab.com
+    image: docker:dind
     script:
-        - ls
+        - docker build -t jakubenglicky/skoleninasbavi-cz .
