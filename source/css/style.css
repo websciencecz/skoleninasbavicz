@@ -5,6 +5,7 @@
 .content-box {
     background-color: #FBFDFF;
     min-height: 995px;
+    border-top: 1px solid silver;
 }
 
 hr {
@@ -17,7 +18,6 @@ hr {
 
 .claim-box {
     background: url("../img/bg_hp.png");
-    margin-top: 15px;
     min-height: 550px;
     text-align: center;
 }
@@ -51,6 +51,7 @@ hr {
 
 .menu {
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .menu li {
@@ -146,6 +147,10 @@ hr {
     width: 350px;
 }
 
+.lector-box a, a:hover {
+    color: black;
+}
+
 .lector-box img {
     min-height: 325px;
 }
@@ -219,4 +224,13 @@ hr {
 
 .navbar-toggler {
     margin-top: 10px;
+}
+
+.social-icons-lector i {
+    padding-right: 15px;
+    color: black;
+}
+
+.social-icons-lector i:hover {
+    color: dodgerblue ;
 }
