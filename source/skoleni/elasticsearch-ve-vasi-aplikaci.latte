@@ -1,0 +1,97 @@
+---
+layout: "_layouts/default.twig"
+title: "Elasticsearch - ve vaší aplikaci (workshop)"
+---
+
+{block content}
+	<div class="container-fluid content-box">
+		<div class="container">
+			<br>
+			<h2>Elasticsearch - ve vaší aplikaci (workshop)</h2>
+			<hr>
+			<div class="row">
+				<div class="col-md-8">
+					<h4 class="p-title">Pro koho je workshop určen:</h4>
+					<p class="paragraph">
+						Chcete začít používat Elasticsearch ve vaší PHP aplikaci a už máte nějaké předchozí zkušenosti. Ať už samostatně získané nebo z našeho školení `Elasticsearch: vyhledávejte jako profíci`. Chtěli byste se vítězně poprat se sestavováním dotazu do Elasticsearch, pokořit všechny pole a jsony.
+					</p>
+					<h4 class="p-title">Co na workshopu zvládneme:</h4>
+					<p>Na fiktivním eshopu si připravíme chytré hledání které budeme moci filtrovat podle parametrů zobrazených produktů.</p>
+					<br>
+					<h5>První část - Příprava dat</h5>
+					<ul>
+						<li>Připravíme si obálku na data - produkt</li>
+						<li>Nastavíme mapping do Elasticsearch</li>
+						<li>Naplníme náš index v Elasticsearch předpřipravenými daty</li>
+					</ul>
+					<br>
+					<h5>Druhá část - Hledání</h5>
+					<ul>
+						<li>Začneme hledáním s přesnou shodou</li>
+						<li>Pokročíme k hledání s volnou shodou</li>
+						<li>Zakončíme frázovou relevancí, zohledněním začátku slova a kontextovým dělením a rozpojováním slov</li>
+					</ul>
+					<br>
+					<h5>Třetí část - Filtrování</h5>
+					<ul>
+						<li>Nad výsledky si uděláme aggregaci ceny, dostupnosti a štítků</li>
+						<li>Získané aggregace zobrazíme k výpisu produktů aby bylo možno pomocí nich zpřesňovat výsledky</li>
+						<li>K parametrům pomocí aggregací doplňíme pluska - o kolik se rozšíří výpis produktů když parametr zakliknu</li>
+					</ul>
+					<h4 class="p-title">Co budete potřebovat:</h4>
+					<ul>
+						<li>Elasticsearch nejnovější verze <a href="https://www.elastic.co/downloads/elasticsearch" target="_blank">https://www.elastic.co/downloads/elasticsearch</a> </li>
+						<li>Kibana nejnovější verze <a href="https://www.elastic.co/downloads/kibana" target="_blank">https://www.elastic.co/downloads/kibana</a> </li>
+						<li><span>Volitelně: Svoji aplikaci kam Elasticsearch chcete dostat</span></li>
+						<li><span>Volitelně: Svůj problém s Elasticsearch který chcete vyřešit</span></li>
+					</ul>
+					<br>
+					<hr>
+					<div class="row">
+						<div class="col">
+							<a href="" class="white-link">
+								<div class="buy-box buy-box-l center">
+									<span>KOUPIT WORKSHOP</span>
+									<br>
+									<span>Cena: 2600,-</span>
+								</div>
+							</a>
+						</div>
+						<div class="col">
+							<a href="" class="black-link">
+								<div class="buy-box buy-box-r center">
+									<span>KOUPIT WORKSHOP + <a href="{$basePath}/skoleni/elasticsearch-hledejte-jako-profici">ŠKOLENÍ</a></span>
+									<br>
+									<span>Cena: 5500,-</span>
+								</div>
+							</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-4">
+					<div class="info">
+						<div class="info-row">
+							<span class="info-key">Délka:</span>
+							<span class="info-value bold">jednodenní</span>
+						</div>
+						<div class="info-row">
+							<span class="info-key">Termín:</span>
+							<span class="info-value bold">únor 2020</span>
+						</div>
+						<div class="info-row">
+							<span class="info-key">Místo konání:</span>
+							<span class="info-value bold">Brno</span>
+						</div>
+						<div class="info-row">
+							<span class="info-key">Celkový počet míst:</span>
+							<span class="info-value bold">6</span>
+						</div>
+					</div>
+                    {include "_snippets/lectores/vaclav-cevela.latte"}
+				</div>
+
+			</div>
+		</div>
+	</div>
+{/block}
