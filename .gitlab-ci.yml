@@ -22,9 +22,9 @@ generate:
         - vendor/bin/statie generate source
         
 deploy:
-    stage: deploy
-    image: python:latest
+    stage: build-docker
     script:
-        - pip install awscli
-        - aws s3 cp ./output/ s3://skoleninasbavi-cz-beta/ --recursive --exclude "*" --include "*.html"
+        - docker login registry.gitlab.com
+        - docker build -t registry.gitlab.com/jakubenglicky/skoleninasbavi-cz .
+        - docker push registry.gitlab.com/jakubenglicky/skoleninasbavi-cz
    
