@@ -1,31 +1,9 @@
 stages:
-    - prepare
-    - build
     - deploy
-    
-cache:
-  key: ${CI_COMMIT_REF_SLUG}
-  paths:
-  - vendor/
-  - output/
-  
-composer:
-    stage: prepare
-    image: composer:latest
-    script:
-        - composer install
-        
-generate:
-    stage: build
-    image: php:7.1-cli
-    script:
-        - vendor/bin/statie generate source
-        
+
 prepare-docker:
     stage: deploy
     image: docker:stable
     script:
-        - docker login registry.gitlab.com
-        - docker build -t registry.gitlab.com/jakubenglicky/skoleninasbavi-cz .
-        - docker push registry.gitlab.com/jakubenglicky/skoleninasbavi-cz
+        - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
    
