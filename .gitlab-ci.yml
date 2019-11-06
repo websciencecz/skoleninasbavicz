@@ -23,6 +23,7 @@ generate:
         
 prepare-docker:
     stage: deploy
+    image: docker:stable
     script:
         - docker login registry.gitlab.com
         - docker build -t registry.gitlab.com/jakubenglicky/skoleninasbavi-cz .
