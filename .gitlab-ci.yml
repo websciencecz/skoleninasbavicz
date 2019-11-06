@@ -3,6 +3,8 @@ stages:
 
 prepare-docker:
     stage: deploy
-    image: docker:dind
+    image: docker:stable
+    services:
+        - docker:dind
     script:
-        - docker build -t jakubenglicky/skoleninasbavi-cz .
+        - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
