@@ -1,0 +1,37 @@
+---
+layout: "_layouts/default.twig"
+title: "Jiří Pudil - lektor"
+---
+
+{block content}
+	<div class="container-fluid content-box">
+		<div class="container">
+			<br>
+			<h1>Jiří Pudil</h1>
+			<hr>
+			<div class="row">
+				<div class="col-md-4">
+					<img src="{$basePath}/img/lectores/jiri-pudil.jpg" width="325">
+					<br>
+				</div>
+				<div class="col-md-8">
+					<br>
+					<h2>Full-stack developer</h2>
+					<br>
+					<p>Webový full-stack vývojář z Brna, pravidelný cestovatel mezi back-endem v PHP a front-endem v TypeScriptu. Rád se vzdělává a ještě raději vrací nabyté zkušenosti zpátky komunitě: přispívá do open-source software, píše články na blog, povídá na meetupech, doplňuje dokumentaci PHP. U počítače pije kávu, a když zrovna u počítače nesedí, hraje na kytaru.
+					</p>
+					<br>
+					<a href="https://jiripudil.cz/" target="_blank" class="social-icons-lector"><i class="fas fa-link fa-2x"></i></a>
+					<a href="https://github.com/jiripudil" target="_blank" class="social-icons-lector"><i class="fab fa-github fa-2x"></i></a>
+					<a href="https://twitter.com/jiripudil" target="_blank" class="social-icons-lector"><i class="fab fa-twitter fa-2x"></i></a>
+				</div>
+			</div>
+			<br>
+			<h4>Moje školení</h4>
+			<hr>
+            {include "_snippets/trainings/js-zakladni.latte"}
+
+
+		</div>
+	</div>
+{/block}

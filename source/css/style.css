@@ -98,6 +98,7 @@ a:hover {
 
 .center {
     text-align: center;
+    margin: 0 auto;
 }
 
 .training-box {
@@ -165,6 +166,7 @@ a:hover {
 }
 
 .lector-box img {
+    max-width: 325px;
     min-height: 325px;
 }
 
