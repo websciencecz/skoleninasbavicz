@@ -12,6 +12,14 @@ hr {
     background-color: silver;
 }
 
+h1 {
+    font-size: 34px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 .copyright {
     color: silver;
 }
@@ -68,13 +76,18 @@ hr {
 }
 
 .web-title {
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 26px;
     font-weight: bold;
     color: mediumseagreen;
 }
 
-.web-title a, a:hover {
+.web-title a {
+    color: mediumseagreen;
+    text-decoration: none;
+}
+
+.web-title a:hover {
     color: mediumseagreen;
     text-decoration: none;
 }
@@ -180,6 +193,10 @@ hr {
     color: dodgerblue;
 }
 
+.link:hover {
+    color: black;
+}
+
 .p-title {
     padding-top: 30px;
 }
@@ -208,7 +225,7 @@ hr {
 
 .buy-box {
     width: 350px;
-    height: 100px;
+    height: 120px;
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 16px;
@@ -265,4 +282,14 @@ hr {
 
 .social-icons-lector i:hover {
     color: dodgerblue ;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: brown;
+}
+
+.sale {
+    font-weight: normal;
+    font-size: 14px;
 }
