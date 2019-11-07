@@ -293,3 +293,33 @@ a:hover {
     font-weight: normal;
     font-size: 14px;
 }
+
+.message {
+    position: relative;
+    background: #ffffff;
+    border: 2px solid grey;
+    padding: 15px;
+}
+.message:after, .message:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.message:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #ffffff;
+    border-width: 15px;
+    margin-left: -15px;
+}
+.message:before {
+    border-color: rgba(245, 245, 245, 0);
+    border-top-color: grey;
+    border-width: 18px;
+    margin-left: -18px;
+}
