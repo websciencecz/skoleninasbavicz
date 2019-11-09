@@ -1,0 +1,27 @@
+{
+  "name": "skoleninasbavi-cz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/jakubenglicky/skoleninasbavi-cz.git"
+  },
+  "author": "Jakub Englický",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/jakubenglicky/skoleninasbavi-cz/issues"
+  },
+  "homepage": "https://gitlab.com/jakubenglicky/skoleninasbavi-cz#readme",
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "terser-webpack-plugin": "^2.2.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
