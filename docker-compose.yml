@@ -14,12 +14,14 @@ services:
     image: composer:latest
     volumes:
       - ./:/app
+    command: install
 
   assets:
     image: node:latest
     volumes:
       - ./:/app
     working_dir: /app
+    command: npm install -D
 
 networks:
   default:
