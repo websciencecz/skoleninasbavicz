@@ -1,7 +1,7 @@
 stages:
     - prepare
     - build
-    - deploy
+    - docker
     
 cache:
   key: ${CI_COMMIT_REF_SLUG}
@@ -22,20 +22,20 @@ node:
     script:
       - npm install
 
-build-statie:
+statie:
     stage: build
     image: php:7.1-cli
     script:
         - vendor/bin/statie generate source
 
-build-assets:
+assets:
   stage: build
   image: node:latest
   script:
     - npx webpack
 
-build-docker:
-    stage: deploy
+build:
+    stage: docker
     image: docker:stable
     services:
         - docker:dind
