@@ -32,47 +32,47 @@ statie-beta:
     stage: build
     image: php:7.1-cli
     script:
-        - vendor/bin/statie generate source -c statie_beta.yml
+      - vendor/bin/statie generate source -c statie_beta.yml
     only:
       - master
 
 statie:
-  stage: build
-  image: php:7.1-cli
-  script:
-    - vendor/bin/statie generate source -c statie.yml
-  only:
-    - tags
+    stage: build
+    image: php:7.1-cli
+    script:
+      - vendor/bin/statie generate source -c statie.yml
+    only:
+      - tags
 
 assets:
-  stage: build
-  image: node:latest
-  script:
-    - npx webpack
-  only:
-    - tags
-    - master
+    stage: build
+    image: node:latest
+    script:
+      - npx webpack
+    only:
+      - tags
+      - master
 
 build-beta:
-  stage: docker
-  image: docker:stable
-  services:
-    - docker:dind
-  script:
-    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
-    - docker build -t $CI_REGISTRY/jakubenglicky/skoleninasbavi-cz:beta .
-    - docker push $CI_REGISTRY/jakubenglicky/skoleninasbavi-cz:beta
-  only:
-    - master
+    stage: docker
+    image: docker:stable
+    services:
+      - docker:dind
+    script:
+      - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+      - docker build -t $CI_REGISTRY/jakubenglicky/skoleninasbavi-cz:beta .
+      - docker push $CI_REGISTRY/jakubenglicky/skoleninasbavi-cz:beta
+    only:
+      - master
 
 build:
-  stage: docker
-  image: docker:stable
-  services:
-    - docker:dind
-  script:
-    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
-    - docker build -t $CI_REGISTRY/jakubenglicky/skoleninasbavi-cz .
-    - docker push $CI_REGISTRY/jakubenglicky/skoleninasbavi-cz
-  only:
-    - tags
+    stage: docker
+    image: docker:stable
+    services:
+      - docker:dind
+    script:
+      - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+      - docker build -t $CI_REGISTRY/jakubenglicky/skoleninasbavi-cz .
+      - docker push $CI_REGISTRY/jakubenglicky/skoleninasbavi-cz
+    only:
+      - tags
