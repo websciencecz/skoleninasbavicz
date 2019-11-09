@@ -8,6 +8,7 @@ cache:
   paths:
   - vendor/
   - output/
+  - node_modules/
   
 composer:
     stage: prepare
@@ -15,19 +16,19 @@ composer:
     script:
         - composer install
 
-assets:
+node:
     stage: prepare
     image: node:latest
     script:
       - npm install
 
-generate-statie:
+build-statie:
     stage: build
     image: php:7.1-cli
     script:
         - vendor/bin/statie generate source
 
-generate-assets:
+build-assets:
   stage: build
   image: node:latest
   script:
