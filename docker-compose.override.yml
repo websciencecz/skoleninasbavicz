@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    labels:
+      - "traefik.frontend.rule=Host:skoleninasbavi.cz.test"
+
+networks:
+  default:
+    external:
+      name: traefik-proxy
