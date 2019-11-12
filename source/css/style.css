@@ -24,9 +24,11 @@ a:hover {
 }
 
 .claim-box {
-	background-image: url("../img/bg_hp.jpg");
-	min-height: 550px;
 	text-align: center;
+}
+
+.claim-box img {
+	width: 100%;
 }
 
 .contact table{
