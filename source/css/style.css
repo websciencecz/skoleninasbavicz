@@ -53,42 +53,48 @@ a:hover {
 	min-height: 120px;
 }
 
+#header {
+    display: flex;
+	width: 100%;
+}
+
 .social-icons {
 	color: white;
 	font-size: 32px;
 }
 
-.menu {
+#menu {
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
 
-.menu li {
-	padding-right: 25px;
+#menu li {
+	padding-left: 35px;
 }
 
-.menu li a {
+#menu li a {
 	color: silver;
 	font-weight: bold;
 }
 
-.menu li a:hover {
+#menu li a:hover {
 	color: grey;
 }
 
-.web-title {
-	margin-top: 15px;
+#web-title {
+    flex: 10;
 	font-size: 26px;
 	font-weight: bold;
 	color: mediumseagreen;
+	position: relative;
 }
 
-.web-title a {
+#web-title a {
 	color: mediumseagreen;
 	text-decoration: none;
 }
 
-.web-title a:hover {
+#web-title a:hover {
 	color: mediumseagreen;
 	text-decoration: none;
 }
@@ -325,4 +331,9 @@ a:hover {
 	border-top-color: grey;
 	border-width: 18px;
 	margin-left: -18px;
+}
+
+#hamburger {
+	font-size: 18px;
+	margin-top: 0px;
 }
