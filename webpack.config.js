@@ -6,6 +6,7 @@ const path = require('path');
 module.exports = {
 
 	entry: [
+		"./source/js/app.js",
 		"./source/css/style.css"
 	],
 
@@ -39,7 +40,8 @@ module.exports = {
 						}
 					}
 				],
+
 			}
-		],
+		]
 	},
 };
