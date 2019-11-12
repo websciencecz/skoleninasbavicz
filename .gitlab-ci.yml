@@ -59,9 +59,9 @@ build-beta:
     services:
       - docker:dind
     script:
-      - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
-      - docker build -t $CI_REGISTRY/jakubenglicky/skoleninasbavi-cz:beta .
-      - docker push $CI_REGISTRY/jakubenglicky/skoleninasbavi-cz:beta
+      - docker login -u jakubenglicky -p b216e0d6-7aa2-49e2-9510-8e793d389ad6
+      - docker build -t jakubenglicky/skoleninasbavi-cz:beta .
+      - docker push jakubenglicky/skoleninasbavi-cz:beta
     only:
       - master
 
@@ -71,8 +71,8 @@ build:
     services:
       - docker:dind
     script:
-      - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
-      - docker build -t $CI_REGISTRY/jakubenglicky/skoleninasbavi-cz .
-      - docker push $CI_REGISTRY/jakubenglicky/skoleninasbavi-cz
+      - docker login -u jakubenglicky -p b216e0d6-7aa2-49e2-9510-8e793d389ad6
+      - docker build -t jakubenglicky/skoleninasbavi-cz .
+      - docker push jakubenglicky/skoleninasbavi-cz
     only:
       - tags
