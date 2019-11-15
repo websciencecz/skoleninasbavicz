@@ -4,11 +4,13 @@ services:
   web:
     image: php:7.3-apache
     volumes:
-      - ./:/var/www/html
+      - ./:/var/www
     ports:
       - 80
     environment:
       VIRTUAL_HOST: skoleninasbavi.cz.test
+
+    working_dir: /var/www
 
   composer:
     image: composer:latest
