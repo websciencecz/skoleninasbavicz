@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  web:
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.web.rule=Host(`skoleninasbavi.cz.test`)"
+      - "traefik.http.routers.web.entrypoints=web"
+
+networks:
+  default:
+    external:
+      name: traefik-proxy
