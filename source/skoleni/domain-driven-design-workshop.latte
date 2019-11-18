@@ -1,0 +1,107 @@
+---
+layout: "_layouts/default.twig"
+title: "Domain-Driver Design (workshop)"
+---
+
+{block content}
+	<div class="container-fluid content-box">
+		<div class="container">
+			<br>
+			<h1>Domain-Driver Design (workshop)</h1>
+			<hr>
+			<div class="row">
+				<div class="col-md-8">
+					<h3 class="p-title">Pro koho je školení určeno:</h3>
+					<p class="paragraph">
+						Jak napsat formuláře, šablony, API, DB, ... to všechno víte, ale umíte napsat dobrý objektový model? Model nezávislý na databázi; model pokrývající složité use-case; model čitelný a testovatelný?
+						Toto všechno se naučíte společně s tím, jak modelovat bez kódu, a jak do modelování zatahovat neprogramátory, kteří ví o problematice daleko více než vy, a kteří Vám otevřou oči.
+						Začneme diskuzí s doménovým expertem, a budeme odcházet s otestovanou funkční aplikací.
+					</p>
+					<h4 class="p-title">Co se na školení naučíte:</h4>
+					<br>
+					<h5>Domain</h5>
+					<ul>
+						<li>Zapomeneme na programování, a budeme se zabývat podstatou - Doménou</li>
+						<li>Doménový expert nám vysvětlí problematiku, a my z něj budeme tahat moudra, sestavovat případy užití, a zjišťovat zapeklitosti</li>
+					</ul>
+					<h5>Model</h5>
+					<ul>
+						<li>Seskládáme závislosti mezi doménovými termíny</li>
+						<li>Převedeme model na konkrétnější diagram tříd</li>
+						<li>Ten zvalidujeme s doménovým expertem</li>
+					</ul>
+					<h5>Model technicky</h5>
+					<ul>
+						<li>Naučíme se, co znamenají value objekty, entity, agregáty, a bounded kontexty</li>
+						<li>Tyto koncepty aplikujeme v našem modelu</li>
+					</ul>
+					<h5>Testování & Programování</h5>
+					<ul>
+						<li>Pomocí testů zapíšeme doménové scénáře</li>
+						<li>Naprogramujeme dříve sestavený model</li>
+						<li>(jak vidíte, užijeme TDD)</li>
+					</ul>
+					<h5>Funkční aplikace</h5>
+					<ul>
+						<li>Doménový kód napojíme na Symonfy (v případě většího zájmu na Nette)</li>
+						<li>A odcházíme s funkční aplikací</li>
+					</ul>
+
+					<p>Jak vidíte, z workshopu si toho odnesete opravdu hodně, proto je koncipován jako dvoudenní. Aby workshop odpovídal realitě, tak první den budeme mít k dispozici doménového experta, který se nám bude plně věnovat, a zároveň není programátor.</p>
+					<h4 class="p-title">Co budete potřebovat:</h4>
+					<ul>
+						<li>Vaše oblíbené IDE, PHP</li>
+						<li>Můžete programovat i v jiném jazyce! DDD není o programování, je hlavně o doméně a modelování.</li>
+					</ul>
+					<br>
+					<hr>
+					<div class="message">
+						<span>Využijte slevu na první školení a pojďte se s námi vzdělávat, vstupenky budou v prodeji co nevidět.</span>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<a href="" class="white-link">
+								<div class="buy-box buy-box-l center">
+									<span>KOUPIT ŠKOLENÍ</span>
+									<br>
+									<span class="sale">Cena před slevou: <span class="strike">10000,-</span></span>
+									<br>
+									<span>Cena: 7990,-</span>
+								</div>
+							</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-4">
+					<div class="info">
+						<div class="info-row">
+							<hr class="d-md-none">
+							<span class="info-key">Úroveň:</span>
+							<span class="info-value bold">pokročilý</span>
+						</div>
+						<div class="info-row">
+							<span class="info-key">Délka:</span>
+							<span class="info-value bold">dvoudenní</span>
+						</div>
+						<div class="info-row">
+							<span class="info-key">Termín:</span>
+							<span class="info-value bold">20. 2. - 21. 2. 2020</span>
+						</div>
+						<div class="info-row">
+							<span class="info-key">Místo konání:</span>
+							<span class="info-value bold">Brno</span>
+						</div>
+						<div class="info-row">
+							<span class="info-key">Celkový počet míst:</span>
+							<span class="info-value bold">8</span>
+						</div>
+					</div>
+                    {include "_snippets/lectores/svata-simara.latte"}
+				</div>
+
+			</div>
+		</div>
+	</div>
+{/block}

@@ -1,0 +1,34 @@
+---
+layout: "_layouts/default.twig"
+title: "Svaťa Šimara - lektor"
+---
+
+{block content}
+	<div class="container-fluid content-box">
+		<div class="container">
+			<br>
+			<h1>Svaťa Šimara</h1>
+			<hr>
+			<div class="row">
+				<div class="col-md-4">
+					<img src="{$basePath}/img/lectores/svata-simara.jpg" width="325">
+					<br>
+				</div>
+				<div class="col-md-8">
+					<br>
+					<h2>Programátor</h2>
+					<br>
+					<p>Jak napsat formuláře, šablony, API, DB, ... to všechno se dočtete nebo si zajdete na školení. Ale jak napsat dobrý objektový model? Roky jsem hledal školení na modelování, ale žádné nenašel. No, a pokud žádné takové školení není, nezbývá než ho udělat. Loni jsem udělal úspěšný free trailer <a href="https://github.com/simara-svatopluk/ddd-course">https://github.com/simara-svatopluk/ddd-course</a>, a tentokrát to bude naostro a hutně. Krom modelování a DDD jsem milovníkem testovatelného a otestovaného kódu, logiky v entitách a černého čaje.</p>
+					<br>
+					<a href="https://github.com/simara-svatopluk" target="_blank" class="social-icons-lector"><i class="fab fa-github fa-2x"></i></a>
+				</div>
+			</div>
+			<br>
+			<h4>Moje školení</h4>
+			<hr>
+            {include "_snippets/trainings/ddd-workshop.latte"}
+
+
+		</div>
+	</div>
+{/block}
