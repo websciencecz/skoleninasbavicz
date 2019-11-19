@@ -1,5 +1,5 @@
-FROM php:7.2-apache
+FROM httpd:2.4
 
-COPY output /var/www/html
+COPY ./html/ /usr/local/apache2/htdocs/
 
 EXPOSE 80

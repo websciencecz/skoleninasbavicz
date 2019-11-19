@@ -7,7 +7,7 @@ cache:
   key: ${CI_COMMIT_REF_SLUG}
   paths:
   - vendor/
-  - output/
+  - html/
   - node_modules/
   
 composer:
@@ -32,7 +32,7 @@ statie-beta:
     stage: build
     image: php:7.1-cli
     script:
-      - vendor/bin/statie generate source -c statie_beta.yml
+      - vendor/bin/statie generate source -c statie_beta.yml --output=html
     only:
       - master
 
@@ -40,7 +40,7 @@ statie:
     stage: build
     image: php:7.1-cli
     script:
-      - vendor/bin/statie generate source -c statie.yml
+      - vendor/bin/statie generate source -c statie.yml --output=html
     only:
       - tags
 
