@@ -178,7 +178,6 @@ a:hover {
 
 .lector-box img {
 	max-width: 325px;
-	min-height: 325px;
 }
 
 .lector-name {
@@ -186,8 +185,10 @@ a:hover {
 	margin-top: 20px;
 }
 
-.lector-image {
-	max-width: 325px;
+.lector-image img {
+	/*
+	max-width: 325px;*/
+	width: 100%;
 }
 .tags {
 	margin-top: 10px;
@@ -237,8 +238,7 @@ a:hover {
 }
 
 .buy-box {
-	width: 350px;
-	height: 120px;
+	min-height: 120px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	font-size: 16px;
@@ -340,4 +340,90 @@ a:hover {
 #hamburger {
 	font-size: 18px;
 	margin-top: 0px;
+}
+
+.about-lector,
+.training-detail {
+	display: flex;
+}
+
+.lector-image,
+.training-detail-info {
+	flex: 4;
+}
+
+.lector-image {
+	margin-right: 20px;
+}
+
+.lector-text,
+.training-detail-content {
+	flex: 8;
+}
+
+.lector-text p {
+	text-align: justify;
+}
+
+.training-detail-info {
+	margin-left: 20px;
+}
+
+@media (max-width: 1199px) {
+	.training-detail {
+		display: inline;
+	}
+	.training-detail-info {
+		display: flex;
+		margin-top: 20px;
+	}
+	.info,
+	.training-detail-lector {
+		flex: 1;
+	}
+}
+
+@media (max-width: 991px) {
+	.lector-image,
+	.lector-text {
+		flex: 1;
+	}
+}
+
+@media (max-width: 767px) {
+	.about-lector {
+		display: inline;
+	}
+	h1 {
+		font-size: 28px;
+	}
+	h2 {
+		font-size: 25px;
+	}
+	.lector-image{
+		margin-right: 0px;
+		text-align: center;
+	}
+	.training-detail-info {
+		display: inline;
+	}
+	#web-title img {
+		width: 200px;
+	}
+}
+
+@media (max-width: 419px) {
+	.lector-box {
+		max-width: 300px;
+		min-height: auto;
+	}
+	.lector-box img {
+		width: 95%;
+	}
+}
+
+@media (max-width: 374px) {
+	.lector-box {
+		max-width: 250px;
+	}
 }
