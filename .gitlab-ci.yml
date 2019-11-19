@@ -30,7 +30,7 @@ node:
 
 statie-beta:
     stage: build
-    image: php:7.1-cli
+    image: php:7.3-cli
     script:
       - vendor/bin/statie generate source -c statie_beta.yml --output=html
     only:
@@ -38,7 +38,7 @@ statie-beta:
 
 statie:
     stage: build
-    image: php:7.1-cli
+    image: php:7.3-cli
     script:
       - vendor/bin/statie generate source -c statie.yml --output=html
     only:
