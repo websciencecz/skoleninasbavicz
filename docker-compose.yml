@@ -2,15 +2,20 @@ version: '3'
 
 services:
   web:
-    image: php:7.3-apache
+    image: httpd:2.4
     volumes:
-      - ./:/var/www
+      - ./html:/usr/local/apache2/htdocs/
     ports:
       - 80
     environment:
       VIRTUAL_HOST: skoleninasbavi.cz.test
 
-    working_dir: /var/www
+  statie:
+    image: php:7.3-cli
+    volumes:
+      - ./:/app
+    entrypoint: vendor/bin/statie
+    working_dir: /app
 
   composer:
     image: composer:latest
