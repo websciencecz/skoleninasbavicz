@@ -73,12 +73,12 @@ a:hover {
 }
 
 #menu li a {
-	color: silver;
+	color: grey;
 	font-weight: bold;
 }
 
 #menu li a:hover {
-	color: grey;
+	color: black;
 }
 
 #web-title {
