@@ -126,6 +126,11 @@ a:hover {
 	margin-bottom: 20px;
 }
 
+.training-box a {
+	color: black;
+}
+
+
 .training-box-date {
 	font-size: 18px;
 	margin-top: 25px;
