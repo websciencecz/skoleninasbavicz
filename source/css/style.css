@@ -63,6 +63,10 @@ a:hover {
 	font-size: 32px;
 }
 
+.social-icons a {
+	margin-left: 10px;
+}
+
 #menu {
 	margin-top: 15px;
 	margin-bottom: 15px;
