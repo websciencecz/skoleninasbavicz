@@ -1,2 +1,3 @@
 parameters:
   basePath: https://skoleninasbavi.cz
+  assetsVersion: 1
