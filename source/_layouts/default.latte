@@ -12,7 +12,14 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>  {ifset $title}{$title} | {/ifset}Školení nás baví</title>
+	<title>{ifset $title}{$title} | {/ifset}Školení nás baví</title>
+
+	<meta name="description" content="{$metaDescription ? $metaDescription : 'Jsme vývojáři z Brna, kteří znalosti ze svých oborů rádi předávají dál. Pojďte se vzdělávat s námi.'}">
+	<meta name="keywords" content="{$metaKeywords ? $metaKeywords : 'skoleni, brno, vzdelavani, workshopy'}">
+
+	<meta name="og:title" content="{$ogTitle ? $ogTitle : 'Pojďme se společně vzdělávat | Školení nás baví'}">
+	<meta name="og:description" content="{$ogDescription ? $ogDescription : 'Jsme vývojáři z Brna, kteří znalosti ze svých oborů rádi předávají dál.'}">
+	<meta name="og:image" content="{$ogImage ? $ogImage : $basePath . '/img/big_logo.png'}">
 
 	<link rel="stylesheet" type="text/css" href="{$basePath}/css/style.min.css?v={$assetsVersion}">
 	<link rel="icon" href="{$basePath}/img/favicon.png?v={$assetsVersion}">
