@@ -380,6 +380,10 @@ a:hover {
 	margin-left: 20px;
 }
 
+.fullhouse {
+	color: red;
+}
+
 @media (max-width: 1199px) {
 	.training-detail {
 		display: inline;
