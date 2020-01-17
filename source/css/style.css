@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -17,10 +21,6 @@ h1 {
 
 a:hover {
 	text-decoration: none;
-}
-
-.copyright {
-	color: silver;
 }
 
 .claim-box {
@@ -249,12 +249,12 @@ a:hover {
 }
 
 .buy-box {
-	min-height: 120px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	font-size: 16px;
 	font-weight: bold;
 	padding: 25px;
+	border: 1px solid silver;
 }
 
 
@@ -384,6 +384,10 @@ a:hover {
 	color: red;
 }
 
+.fullhouse-box {
+	padding-bottom: 8px;
+}
+
 @media (max-width: 1199px) {
 	.training-detail {
 		display: inline;
@@ -443,3 +447,134 @@ a:hover {
 		max-width: 250px;
 	}
 }
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky+.description {
+	padding-top: 95px;
+}
+
+/* Buy box */
+
+.iframe-lightbox .content-holder {
+	max-width: 906px;
+	height: 95%;
+}
+
+.iframe-lightbox .content {
+	height: 100% !important;
+	padding-bottom: 0 !important;
+}
+
+#my-buy-box {
+	background-color: #3cb371;
+	margin-top: 25px;
+}
+
+#my-buy-box .content {
+	display: flex;
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+
+#my-buy-box .content .text {
+	color: white;
+	flex: 1;
+	/*padding-left: 12px;*/
+	padding-top: 21px;
+}
+
+#my-buy-box .content .btn {
+	text-align: right;
+	padding: 10px 0;
+}
+
+@media (max-width: 767.98px) {
+	.sms-ticket-btn {
+		content: url(https://www.smsticket.cz/static/images/widgets/sale-anchor-mini.png);
+	}
+	#my-buy-box .content .text {
+		padding-top: 16px;
+	}
+	#my-buy-box .content .text h4 {
+		font-size: 20px;
+	}
+	.sticky+.description {
+		padding-top: 82px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	#my-buy-box .content .text {
+		padding-top: 17px;
+	}
+	#my-buy-box .content .text h4 {
+		font-size: 18px;
+	}
+}
+
+.footer-copyright {
+	display: flex;
+	color: silver;
+	padding-bottom: 15px;
+}
+
+.copyright-space {
+	flex: 1;
+}
+
+.smsticket-info {
+	text-align: right;
+}
+
+.smsticket-info img {
+	float: right;
+}
+
+.description .date {
+	display: none;
+}
+
+@media (max-width: 1199.98px) {
+	.description .date {
+		display: inline;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.footer-copyright {
+		display: inline;
+	}
+	.smsticket-info {
+		text-align: left;
+		padding-bottom: 15px;
+	}
+	.smsticket-info img {
+		float: none;
+	}
+}
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	/*border: none;
+	outline: none;*/
+	font-size: 40px;
+}
+
+#myBtn i {
+	color: black;
+}
+
+#myBtn i:hover {
+	color: #3cb371;
+	cursor: pointer;
+}
+
