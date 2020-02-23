@@ -61,6 +61,7 @@ a:hover {
 .social-icons {
 	color: white;
 	font-size: 32px;
+	text-align: right;
 }
 
 .social-icons a {
@@ -576,5 +577,13 @@ a:hover {
 #myBtn i:hover {
 	color: #3cb371;
 	cursor: pointer;
+}
+
+.important-links li {
+	list-style: none;
+}
+
+.important-links a {
+	color: #fff;
 }
 
