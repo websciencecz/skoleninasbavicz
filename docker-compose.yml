@@ -30,6 +30,16 @@ services:
     working_dir: /app
     command: npm install -D
 
+  strapi:
+    image: strapi/strapi
+    volumes:
+      -  strapi-data:/srv/app
+    ports:
+      - 1337:1337
+
+volumes:
+  strapi-data:
+
 networks:
   default:
     external:
