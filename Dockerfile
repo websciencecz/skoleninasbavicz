@@ -15,7 +15,7 @@ COPY . /app
 WORKDIR /app
 
 RUN composer install
-RUN vendor/bin/statie generate source -c statie_local.yml --output=html
+RUN vendor/bin/statie generate source -c statie.yml --output=html
 
 FROM httpd:2.4
 
