@@ -10,7 +10,7 @@
 }
 .content-box {
 	background-color: #FBFDFF;
-	min-height: 995px;
+	min-height: 996px;
 	border-top: 1px solid silver;
 }
 
@@ -40,7 +40,7 @@ a:hover {
 
 .footer-box {
 	background-color: rgb(50,50,50);
-	min-height: 280px;
+	min-height: 230px;
 	padding-top: 30px;
 }
 
@@ -124,9 +124,7 @@ a:hover {
 
 .training-box {
 	background-color: white;
-	padding: 10px;
 	box-shadow: 5px 10px 18px silver;
-	min-height: 100px;
 	margin-bottom: 20px;
 }
 
@@ -139,8 +137,6 @@ a:hover {
 	font-size: 18px;
 	margin-top: 25px;
 	margin-bottom: 25px;
-	padding-left: 40px;
-	border-right:1px solid grey;
 }
 
 .training-box-text {
