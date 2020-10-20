@@ -5,14 +5,11 @@ const path = require('path');
 
 module.exports = {
 
-	entry: [
-		"./source/js/app.js",
-		"./source/css/style.css"
-	],
+	entry: "./index.js",
 
 	output: {
-		filename: "js/app.js",
-		path: path.resolve(__dirname, "html"),
+		path: path.resolve(__dirname, 'html'),
+		filename: 'js/bundle.js',
 	},
 
 	plugins: [
