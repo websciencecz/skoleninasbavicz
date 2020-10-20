@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 
 app.use(express.static('.'));
-const YOUR_DOMAIN = 'http://payments.skoleninasbavi.cz.test';
+const YOUR_DOMAIN = process.env.DOMAIN;
 app.post('/create-session', async (req, res) => {
 	const session = await stripe.checkout.sessions.create({
 		payment_method_types: ['card'],
@@ -29,4 +29,4 @@ app.post('/create-session', async (req, res) => {
 	});
 	res.json({ id: session.id });
 });
-app.listen(4242, () => console.log('Running on port 4242'));
+app.listen(80, () => console.log('Running on port 80'));
