@@ -26,6 +26,10 @@ a:hover {
 	text-decoration: none;
 }
 
+img {
+	max-width: 100%;
+}
+
 .claim-box {
 	text-align: center;
 }
@@ -56,9 +60,17 @@ a:hover {
 	min-height: 120px;
 }
 
+.btn-success {
+	background: #3cb371;
+}
+
 #header {
     display: flex;
 	width: 100%;
+}
+
+iframe {
+	max-width: 100%;
 }
 
 .social-icons {
@@ -590,3 +602,49 @@ a:hover {
 	color: #fff;
 }
 
+/* Livestream */
+
+.livestream-box {
+	background-color: white;
+	box-shadow: 5px 10px 18px silver;
+	padding: 30px 25px;
+	width: 100%
+}
+
+.livestream-box .text-side,
+.livestream-box .yt-side {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.livestream-box .text-side h1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.livestream-box .text-side .date {
+	display: inline-block;
+}
+
+.livestream-box .text-side h1,
+.livestream-box .text-side .date {
+	margin-bottom: 25px;
+}
+
+.livestream-box .text-side .date+.date {
+	padding-left: 5px;
+}
+
+.livestream-box .text-side .date i {
+	padding-right: 5px;
+}
+
+@media (min-width: 768px) {
+	.livestream-box {
+		display: flex;
+	}
+	.livestream-box .text-side,
+	.livestream-box .yt-side {
+		width: 50%;
+	}
+}
