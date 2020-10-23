@@ -21,14 +21,16 @@
 	<meta name="og:description" content="{$ogDescription ? $ogDescription : 'Jsme vývojáři z Brna, kteří znalosti ze svých oborů rádi předávají dál.'}">
 	<meta name="og:image" content="{$basePath}{$ogImage ? $ogImage : '/img/big_logo.png'}">
 
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/englishextra/iframe-lightbox@0.2.8/css/iframe-lightbox.min.css">
+	<link rel="preload" href="{$basePath}/css/style.min.css?v={$assetsVersion}" as="style">
+	<link rel="preload" href="{$basePath}/js/bundle.js?v={$assetsVersion}" as="script" crossorigin="anonymous">
+
 	<link rel="stylesheet" type="text/css" href="{$basePath}/css/style.min.css?v={$assetsVersion}">
 	<link rel="icon" href="{$basePath}/img/favicon.png?v={$assetsVersion}">
 
 </head>
 <body>
 
-<div onclick="topFunction()" id="myBtn"><i title="Nahoru" class="fas fa-chevron-circle-up" aria-hidden="true"></i></div>
+<a href="#" id="myBtn"><i title="Nahoru" class="fas fa-chevron-circle-up" aria-hidden="true"></i></a>
 
 <div id="navbar">
 	<div class="container">
@@ -118,11 +120,6 @@
 	</div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/gh/englishextra/iframe-lightbox@0.2.8/js/iframe-lightbox.min.js" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/132773d81b.js" crossorigin="anonymous"></script>
 <script src="{$basePath}/js/bundle.js?v={$assetsVersion}" crossorigin="anonymous"></script>
 </body>
 </html>

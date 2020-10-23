@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@stripe/stripe-js": "^1.10.0",
+    "iframe-lightbox": "^0.2.8",
     "stripe": "^8.114.0"
   }
 }
