@@ -2,9 +2,9 @@ version: '3'
 
 services:
   web:
-    image: httpd:2.4
+    image: peckadesign/php:7.4-dev
     volumes:
-      - ./html:/usr/local/apache2/htdocs/
+      - ./html:/var/www/html
     environment:
       VIRTUAL_HOST: skoleninasbavi.cz.test
 

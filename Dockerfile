@@ -17,11 +17,11 @@ WORKDIR /app
 RUN composer install
 RUN vendor/bin/statie generate source -c statie.yml --output=html
 
-FROM httpd:2.4
+FROM peckadesign/php:7.4-dev
 
-COPY --from=composer /app/html /usr/local/apache2/htdocs
+COPY --from=composer /app/html /var/www/html
 
-COPY --from=assets /app/html/css /usr/local/apache2/htdocs/css
-COPY --from=assets /app/html/js /usr/local/apache2/htdocs/js
+COPY --from=assets /app/html/css /var/www/html/css
+COPY --from=assets /app/html/js /var/www/html/js
 
 EXPOSE 80
