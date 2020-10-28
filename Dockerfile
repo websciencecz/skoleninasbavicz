@@ -17,7 +17,7 @@ WORKDIR /app
 RUN composer install
 RUN vendor/bin/statie generate source -c statie.yml --output=html
 
-FROM peckadesign/php:7.4-dev
+FROM peckadesign/php:7.4
 
 COPY --from=composer /app/html /var/www/html
 
