@@ -17,8 +17,8 @@ jobs:
           coverage: none # default is xdebug
 
       - run: make init
-      - run: make assets
       - run: make static
+      - run: make assets
 
       - name: Deploy to Vercel
         uses: peaceiris/actions-gh-pages@v3
