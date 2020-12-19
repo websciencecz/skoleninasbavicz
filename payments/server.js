@@ -1,4 +1,4 @@
-const stripe = require('stripe')('sk_test_51HdBCNGg1BhZ64vx19DdBMaZq7J7IgzYfRfTs8GNVHdfTWWsHplBPl87oBpa55sb2cspxlV62iU7cPd8x13AHbsk003vq9NLwL');
+const stripe = require('stripe')(process.env.SKEY);
 const express = require('express');
 const cors = require('cors');
 const app = express();
