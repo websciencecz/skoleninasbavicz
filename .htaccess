@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !\.test$
+RewriteCond %{HTTP_HOST} ^skoleninasbavi\.cz [NC]
+RewriteRule ^(.*)$ https://www.skoleninasbavi.cz/$1 [L,R=301]

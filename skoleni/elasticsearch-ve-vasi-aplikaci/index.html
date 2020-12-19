@@ -1,0 +1,207 @@
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151432001-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-151432001-1');
+	</script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Elasticsearch - ve vaší aplikaci (workshop) | Školení nás baví</title>
+
+	<meta name="description" content="Workshop v Brně je určeno pro ty co chtějí začít používat Elasticsearch ve své aplikaci a už mají nějaké předchozí zkušenosti.">
+	<meta name="keywords" content="workshop, skoleni, elasticsearch, brno, základy, php">
+
+	<meta name="og:title" content="Elasticsearch - ve vaší aplikaci (workshop) | Školení nás baví">
+	<meta name="og:description" content="Workshop je určeno pro ty co chtějí začít používat Elasticsearch ve své aplikaci a už mají nějaké předchozí zkušenosti.">
+	<meta name="og:image" content="https://www.skoleninasbavi.cz/img/es_workshop.png">
+
+	<link rel="preload" href="https://www.skoleninasbavi.cz/css/style.min.css?v=12" as="style">
+	<link rel="preload" href="https://www.skoleninasbavi.cz/js/bundle.js?v=12" as="script" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="https://www.skoleninasbavi.cz/css/style.min.css?v=12">
+	<link rel="icon" href="https://www.skoleninasbavi.cz/img/favicon.png?v=12">
+
+</head>
+<body>
+
+<a href="#" id="myBtn"><i title="Nahoru" class="fas fa-chevron-circle-up" aria-hidden="true"></i></a>
+
+<div id="navbar">
+	<div class="container">
+		<div class="row">
+
+				<nav id="header" class="navbar navbar-expand-lg navbar-light ">
+
+					<a id="web-title" class="navbar-brand" href="https://www.skoleninasbavi.cz"><img src="https://www.skoleninasbavi.cz/img/logo.svg?v=12"></a>
+
+					<button id="hamburger" class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="collapse_target">
+						<ul id="menu" class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="https://www.skoleninasbavi.cz/livestream">LIVESTREAM</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://www.skoleninasbavi.cz/skoleni">VEŘEJNÁ ŠKOLENÍ</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://www.skoleninasbavi.cz/lektori">LEKTOŘI</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://www.skoleninasbavi.cz/kontakt">KONTAKT</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+        </div>
+	</div>
+</div>
+
+	<div class="content-box">
+		<div class="container">
+			<br>
+			<h1>Elasticsearch - ve vaší aplikaci (workshop)</h1>
+			<span class="training-box-text-skill date">Termín: ---</span>
+			<hr>
+			<div class="training-detail">
+				<div class="training-detail-content">
+					<h3 class="p-title">Pro koho je workshop určen:</h3>
+					<p class="paragraph">
+						Chcete začít používat Elasticsearch ve vaší PHP aplikaci a už máte nějaké předchozí zkušenosti. Ať už samostatně získané nebo z našeho školení `<a href="https://www.skoleninasbavi.cz/skoleni/elasticsearch-hledejte-jako-profici/">Elasticsearch: hledejte jako profíci</a>`. Chtěli byste se vítězně poprat se sestavováním dotazu do Elasticsearch, pokořit všechny pole a jsony.
+					</p>
+					<h4 class="p-title">Co na workshopu zvládneme:</h4>
+					<p>Na fiktivním eshopu si připravíme chytré hledání které budeme moci filtrovat podle parametrů zobrazených produktů.</p>
+					<br>
+					<h5>První část - Příprava dat</h5>
+					<ul>
+						<li>Připravíme si obálku na data - produkt</li>
+						<li>Nastavíme mapping do Elasticsearch</li>
+						<li>Naplníme náš index v Elasticsearch předpřipravenými daty</li>
+					</ul>
+					<br>
+					<h5>Druhá část - Hledání</h5>
+					<ul>
+						<li>Začneme hledáním s přesnou shodou</li>
+						<li>Pokročíme k hledání s volnou shodou</li>
+						<li>Zakončíme frázovou relevancí, zohledněním začátku slova a kontextovým dělením a rozpojováním slov</li>
+					</ul>
+					<br>
+					<h5>Třetí část - Filtrování</h5>
+					<ul>
+						<li>Nad výsledky si uděláme aggregaci ceny, dostupnosti a štítků</li>
+						<li>Získané aggregace zobrazíme k výpisu produktů aby bylo možno pomocí nich zpřesňovat výsledky</li>
+						<li>K parametrům pomocí aggregací doplňíme pluska - o kolik se rozšíří výpis produktů když parametr zakliknu</li>
+					</ul>
+					<h4 class="p-title">Co budete potřebovat:</h4>
+					<ul>
+						<li>Elasticsearch nejnovější verze <a href="https://www.elastic.co/downloads/elasticsearch" target="_blank">https://www.elastic.co/.../elasticsearch</a> </li>
+						<li>Kibana nejnovější verze <a href="https://www.elastic.co/downloads/kibana" target="_blank">https://www.elastic.co/downloads/kibana</a> </li>
+						<li><span>Volitelně: Svoji aplikaci kam Elasticsearch chcete dostat</span></li>
+						<li><span>Volitelně: Svůj problém s Elasticsearch který chcete vyřešit</span></li>
+					</ul>
+					<br>
+				</div>
+				<div class="training-detail-info">
+					<div class="info">
+						<div class="info-row">
+							<span class="info-key">Délka:</span>
+							<span class="info-value bold">dvoudenní</span>
+						</div>
+						<div class="info-row">
+							<span class="info-key">Termín:</span>
+							<span class="info-value bold">---</span>
+						</div>
+						<div class="info-row">
+							<span class="info-key">Místo konání:</span>
+							<span class="info-value bold">Křenová 71, Brno</span>
+						</div>
+						<div class="info-row">
+							<span class="info-key">Celkový počet míst:</span>
+							<span class="info-value bold">8</span>
+						</div>
+					</div>
+					<div class="training-detail-lector">
+<div class="lector-box center">
+	<a href="https://www.skoleninasbavi.cz/lektori/vaclav-cevela/">
+		<img src="https://www.skoleninasbavi.cz/img/lectores/vaclav-cevela.jpg?v=12">
+		<br>
+		<div class="lector-name">
+			<span class="bold">Václav Čevela</span>
+		</div>
+		<div class="tags">
+			<span class="tag">Elasticsearch</span>
+			<span class="tag">OOP</span>
+		</div>
+	</a>
+
+</div>					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+<div class="footer-box">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="footer-contact">
+					<table>
+						<tr>
+							<td style="padding-bottom: 15px">
+								<img src="https://www.skoleninasbavi.cz/img/logo_ws.png" width="150">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								E-Mail: <a href="mailto:info@skoleninasbavi.cz" class="white-link">info@skoleninasbavi.cz</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Tel.: <a href="tel:+420733348366" class="white-link">+420 733 348 366</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								IČO: 088 99 541
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="col-md-4 right">
+				<div class="social-icons">
+					<a href="https://www.facebook.com/skoleninasbavi/" target="_blank" class="white-link"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://twitter.com/skoleninasbavi"  target="_blank" class="white-link"><i class="fab fa-twitter"></i></a>
+				</div>
+				<br>
+				<ul class="important-links">
+					<li><a href="https://www.webscience.cz/docs/obchodni_podminky.pdf" target="_blank">Obchodní podmínky</a></li>
+					<li><a href="https://www.smsticket.cz/obchodni-podminky" target="_blank">Obchodní podmínky (SMSTicket)</a></li>
+				</ul>
+			</div>
+		</div>
+		<hr style="color: white;">
+		<div class="footer-copyright">
+			<div class="copyright-space">
+				<span class="copyright">&copy; 2020 - Školení nás baví</span>
+			</div>
+			<div class="smsticket-info">
+				<span>Prodej vstupenek zajišťuje&nbsp;</span>
+				<a href="https://smsticket.cz" target="_blank"><img src="https://www.skoleninasbavi.cz/img/smsticket-logo-white.png" height="17"></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://www.skoleninasbavi.cz/js/bundle.js?v=12" crossorigin="anonymous"></script>
+</body>
+</html>
