@@ -1,4 +1,4 @@
-name: Vercel Deploy
+name: Deploy to GH Pages
 
 on:
   push:
@@ -6,21 +6,25 @@ on:
       - master
 
 jobs:
-  deploy:
-    runs-on: ubuntu-18.04
+  build:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-      - with:
+
+      - name: Setup node 12
+        uses: actions/setup-node@v2
+        with:
           node-version: 12.x
       - run: npm ci
-      - run: make assets
-      - uses: shivammathur/setup-php@v2
+      - run: npx webpack
+
+      - name: Static generator
+        uses: shivammathur/setup-php@v2
         with:
           php-version: 7.3
           coverage: none # default is xdebug
-      - run: composer install --prefer-dist --no-progress --no-suggest --no-interaction --optimize-autoloader
-      - run: make static
+        - run: composer install --prefer-dist --no-progress --no-suggest --no-interaction --optimize-autoloader
+        - run: make static
 
       - name: Deploy to GH Pages
         uses: peaceiris/actions-gh-pages@v3
