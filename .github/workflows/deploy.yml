@@ -23,8 +23,8 @@ jobs:
         with:
           php-version: 7.3
           coverage: none # default is xdebug
-        - run: composer install --prefer-dist --no-progress --no-suggest --no-interaction --optimize-autoloader
-        - run: make static
+      - run: composer install --prefer-dist --no-progress --no-suggest --no-interaction --optimize-autoloader
+      - run: make static
 
       - name: Deploy to GH Pages
         uses: peaceiris/actions-gh-pages@v3
