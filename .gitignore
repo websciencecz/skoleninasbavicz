@@ -4,3 +4,4 @@ html/*
 !html/CNAME
 node_modules
 docker-compose.override.yml
+.nuxt
