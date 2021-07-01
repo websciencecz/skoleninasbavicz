@@ -80,7 +80,7 @@
 		<hr style="color: white;">
 		<div class="footer-copyright">
 			<div class="copyright-space">
-				<span class="copyright">&copy; {php echo date('Y')} - Školení nás baví</span>
+				<span class="copyright">&copy; 2021 - Školení nás baví</span>
 			</div>
 			<div class="smsticket-info">
 				<span>Prodej vstupenek zajišťuje&nbsp;</span>
