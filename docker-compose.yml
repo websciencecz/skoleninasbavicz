@@ -19,10 +19,11 @@ services:
       - assets
 
   composer:
-    image: composer:latest
+    image: peckadesign/php:7.4-dev
     volumes:
       - ./:/app
-    command: install
+    working_dir: /app
+    command: composer install
 
   assets:
     image: node:latest
