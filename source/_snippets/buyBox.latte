@@ -5,7 +5,7 @@
 			<h4 n:if="$trainingPrice === '0'">Kapacita byla naplněna<br></h4>
 		</div>
 		<div class="btn">
-			<a n:if="$trainingPrice !== '0'" class="iframe-lightbox-link" href="{$trainingLink}" data-scrolling="true">
+			<a n:if="$trainingPrice !== '0'" class="iframe-lightbox-link" href="{$trainingLink}" data-scrolling="true" onclick="dataLayer.push({'event': 'buyClick'});">
 				<img class="sms-ticket-btn" src="https://www.smsticket.cz/static/images/widgets/sale-anchor-small.png">
 			</a>
 		</div>
