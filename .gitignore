@@ -1,5 +1,5 @@
 /vendor/
-html/*
+html
 !html/.htaccess
 !html/CNAME
 node_modules

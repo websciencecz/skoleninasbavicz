@@ -2,11 +2,11 @@ version: '3'
 
 services:
   web:
-    image: peckadesign/php:7.4
+    image: peckadesign/php:7.4-dev
     volumes:
       - ./html:/var/www/html
-    environment:
-      VIRTUAL_HOST: skoleninasbavi.cz.test
+    ports:
+      - 80:80
 
   statie:
     image: php:7.3-cli
@@ -19,13 +19,13 @@ services:
       - assets
 
   composer:
-    image: composer:latest
+    image: peckadesign/php:7.4-dev
     volumes:
       - ./:/app
-    command: install
+    command: composer install
 
   assets:
-    image: node:latest
+    image: node:14
     volumes:
       - ./:/app
     working_dir: /app
@@ -43,8 +43,4 @@ services:
     ports:
     - 4242:4242
 
-networks:
-  default:
-    external:
-      name: nginx-proxy
 
