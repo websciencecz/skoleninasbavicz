@@ -8,17 +8,16 @@
             <div class="row">
                 <div class="col" v-for="lector in data" :key="lector.id">
                    <div class="lector-box center">
-                        <a href="/lektori/jakub-englicky/">
-                            <img src="img/lectores/jakub-englicky.jpg?v={$assetsVersion}">
+                        <Nuxt-link :to="`/lektori/${lector.attributes.slug}`">
+                            <img :src="lector.attributes.photo.data.attributes.url">
                             <br>
                             <div class="lector-name">
                                 <span class="bold">{{ lector.attributes.name }}</span>
                             </div>
                             <div class="tags">
-                                <span class="tag">Docker</span>
-                                <span class="tag">Git</span>
+                                <span class="tag" v-for="tag in lector.attributes.tags" :key="tag.id">{{ tag.Tag }}</span>
                             </div>
-                        </a>
+                        </Nuxt-link>
                     </div>
                 </div>
         </div>
@@ -31,7 +30,7 @@
 export default {
     async asyncData({ params, error, $axios }) {
         try {
-            const data = (await $axios.$get(`/api/snb-lectors`)).data;
+            const data = (await $axios.$get(`/api/snb-lectors?populate=deep`)).data;
             return {
                 data,
             };

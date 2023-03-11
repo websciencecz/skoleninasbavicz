@@ -8,7 +8,7 @@
 
                         <nav id="header" class="navbar navbar-expand-lg navbar-light ">
 
-                            <a id="web-title" class="navbar-brand" href="{$basePath}"><img src="img/logo.svg"></a>
+                            <a id="web-title" class="navbar-brand" href="{$basePath}"><img src="/img/logo.svg"></a>
 
                             <button id="hamburger" class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
                                 <span class="navbar-toggler-icon"></span>
@@ -42,7 +42,7 @@
                             <table>
                                 <tr>
                                     <td style="padding-bottom: 15px">
-                                        <img src="img/logo_ws.png" width="150">
+                                        <img src="/img/logo_ws.png" width="150">
                                     </td>
                                 </tr>
                                 <tr>
