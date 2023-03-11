@@ -20,7 +20,7 @@
 			<br>
 			<h4>Moje školení</h4>
 			<hr>
-
+            <training-box v-for="training in trainings" :key="training.id" :training="training.attributes" />
         </div>
 	</div>
 </div>
@@ -28,12 +28,16 @@
 </template>
 
 <script>
+import TrainingBox from '../../components/TrainingBox.vue';
 export default {
+    components: { TrainingBox },
     async asyncData({ params, error, $axios }) {
         try {
             const lector = (await $axios.$get(`api/slugify/slugs/snb-lector/${params.slug}?populate=deep`)).data.attributes;
+            const trainings = (await $axios.$get(`api/slugify/slugs/snb-lector/${params.slug}?populate=deep`)).data.attributes['snb_trainings'].data;
             return {
                 lector,
+                trainings
             };
         } catch {
             error({ statusCode: 404, message: 'No Page found' })

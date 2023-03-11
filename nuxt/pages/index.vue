@@ -7,18 +7,27 @@
             <div class="container">
                 <br>
                 <h2>Nejbližší veřejná školení:</h2>
+                <div v-for="training in trainings" :key="training.id">
+                    <training-box v-if=training.attributes.snb_sessions.data[0] :training="training.attributes" />
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import TrainingBox from '../components/TrainingBox.vue';
 export default {
-    async asyncData({ $axios }) {
-        const response = await $axios.get('https://cms.skoleninasbavi.cz/api/snb-courses');
-        return {
-            courses: response.data
+    components: { TrainingBox },
+    async asyncData({ params, error, $axios }) {
+        try {
+            const trainings = (await $axios.$get(`/api/snb-trainings?populate=deep`)).data;
+            return {
+                trainings,
+            };
+        } catch {
+            error({ statusCode: 404, message: 'No Page found' })
         }
-    }
+    },
 }
 </script>

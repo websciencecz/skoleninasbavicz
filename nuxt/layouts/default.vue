@@ -8,7 +8,7 @@
 
                         <nav id="header" class="navbar navbar-expand-lg navbar-light ">
 
-                            <a id="web-title" class="navbar-brand" href="{$basePath}"><img src="/img/logo.svg"></a>
+                            <NuxtLink to="/" id="web-title" class="navbar-brand"><img src="/img/logo.svg"></NuxtLink>
 
                             <button id="hamburger" class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
                                 <span class="navbar-toggler-icon"></span>
