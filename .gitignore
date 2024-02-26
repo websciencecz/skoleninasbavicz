@@ -1,6 +1,0 @@
-/vendor/
-html
-!html/.htaccess
-!html/CNAME
-node_modules
-docker-compose.override.yml
